@@ -833,7 +833,7 @@ border-color: #404BBF;
 
 }
 /*//////////////////////MODAL FORM//////////////////////////// */
-.modal-fom {
+.modal-form {
 display: flex;
 flex-direction: column;
 }
@@ -843,7 +843,7 @@ flex-direction: column;
   border: 1px solid #4D5AE5;
   border-radius: 4px;
   padding-left: 38px;
-
+  transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input-desc {
   display: block;
@@ -862,4 +862,92 @@ flex-direction: column;
   width: 12px;
   height: 12px;
   color: #2e2f42;
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form-input-wrapper{
+  position: relative;
+}
+
+.modal-form-input:focus {
+  outline: none;
+  border-color: #4D5AE5;
+}
+.modal-form-input:focus + .modal-form-input-icon {
+  fill: #4D5AE5;
+}
+/* texteriy */
+.modal-form-message {
+  width: 100%;
+  height: 120px;
+  resize: none;
+ padding: 8px 16px;
+ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ border-radius: 4px;
+}
+
+.modal-form-message:focus {
+  outline: none;
+  border-color: #4D5AE5;
+}
+.modal-form-message::placeholder{
+  font-size: 12px;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
+/* checkbox */
+.modal-form-check-desc::before {
+  display: block;
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid #404BBF;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.moda-form-check:checked + .modal-form-check-desc::before {
+
+  background-color: rgba(77, 90, 229, 1);
+  background-image:url(../images/clic.jpg);
+  border: 1.25px solid #4D5AE5;
+}
+
+.modal-form-check-desc {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #757575;
+margin-bottom: 24px;
+
+}
+
+.modal-form-submit {
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  
+background-color: #4D5AE5;
+color: #ffffff;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+
+font-family: inherit;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.06em;
+  
+}
+.modal-form-submit:focus,
+.modal-form-submit:hover {
+  background: #404BBF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
