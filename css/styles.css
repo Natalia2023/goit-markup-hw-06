@@ -961,23 +961,25 @@ border-radius: 4px;
 
 
 /* footer form */
-/* Mailing div */
+
 .mailing-form {
   display: flex;
   justify-content: space-between;
 }
-
-
+ 
 .mailing-title {
-  margin-right: 537px;
+  /* margin-right: 537px; */
   margin-bottom: 16px;
+  margin-left: 80px;
   color: var(--background-primary-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
+
+
 
 
 .mailing-input {
@@ -1011,9 +1013,8 @@ border-radius: 4px;
   align-items: center;
   justify-content: center;
 
-  padding-left: 24px;
-  /* padding-top: 8px;
-  padding-bottom: 8px */
+ margin-right: 56px;
+
 
   background-color: var(--brand-color);
   color: var(--background-primary-color);
