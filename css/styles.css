@@ -33,13 +33,18 @@ p {
 img {
   display: block;
 }
+/* logo modal */
+.class-fill-svg {
+  fill: #2e2f42;
+  color: #2E2F42;
+}
 /* .conteiner {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   /* outline: 2px solid tomato; */
-}
+
 
 /* ========================== */
 
