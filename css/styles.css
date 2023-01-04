@@ -34,9 +34,14 @@ img {
   display: block;
 }
 /* logo modal */
-.class-fill-svg {
-  fill: #2e2f42;
-  color: #2E2F42;
+@media screen and (max-width: 767px) {
+  
+.nav-list {
+  display: none;
+}
+.contacts {
+  display: none;
+}
 }
 /* .conteiner {
   width: 1158px;
