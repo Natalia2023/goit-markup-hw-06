@@ -33,17 +33,16 @@ p {
 img {
   display: block;
 }
-.conteiner {
+/* .conteiner {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
-}
+  } */
 
 /* ========================== */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -55,11 +54,11 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /*======header========= */
 /* подчеркиваем */
-.nav-link.no-decoration::after {
+/* .nav-link.no-decoration::after {
 content: "";
 display: block;
 width: 100%;
@@ -78,10 +77,11 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .nav-link.no-decoration {
 position: relative;
-}
+} */
 
 /* подчеркиваем конец кода */
 
+/* 
 .header-conteiner {
   display: flex;
   justify-content: space-between;
@@ -94,13 +94,13 @@ position: relative;
  
 .nav-item {
   margin-right: 40px;
- }
+ } */
 
 /* =======conteiner======== */
 
 
 
-
+/* 
 body {
   background-color: var(--background-primary-color);
   color: var(--background-primary-color);
@@ -125,20 +125,20 @@ text-decoration: none;
 
 .nav-link-no-decoration {
   text-decoration: none
-}
+} */
 
 
 /* logo */
-
+/* 
 .header-conteiner {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 
 /* logo */
 
-.page-header {
+/* .page-header {
   margin-bottom: 0;
 }
 
@@ -154,10 +154,10 @@ text-decoration: none;
 
 .logo-accent {
   color: var(--title-primary-color);
-}
+} */
 
 /* Navigation */
-
+/* 
 .nav-list {
   display: flex;
  }
@@ -209,10 +209,10 @@ text-decoration: none;
    display: block; 
   padding-top: 24px;
   padding-bottom: 24px;
- }
+ } */
 
   /* contacts */
-
+/* 
 .contacts  {
   display: flex; 
   align-items: center;
@@ -235,9 +235,9 @@ text-decoration: none;
 
 /*відступ між лого та студіо */
 
-.nav-list {
+/* .nav-list {
   margin-left: 77px;
-}
+}  */
 
 /* Hero */
 .hero-btn {
@@ -1031,4 +1031,35 @@ border-radius: 4px;
 .icon-send {
   margin-left: 16px;
   /* fill: var(--secondary-title-color); */
+}
+
+
+
+.conteiner {
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+@media screen and (min-width:480px) {
+  .conteiner {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:760px) {
+  .conteiner {
+    width: 768px;
+   
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .conteiner {
+    width: 1158px;
+   
+  
+  }
 }
