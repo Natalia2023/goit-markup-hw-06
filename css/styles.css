@@ -33,17 +33,16 @@ p {
 img {
   display: block;
 }
-.conteiner {
+/* .conteiner {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-
-}
+  } */
 
 /* ========================== */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -55,11 +54,11 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
 /*======header========= */
 /* подчеркиваем */
-.nav-link.no-decoration::after {
+/* .nav-link.no-decoration::after {
 content: "";
 display: block;
 width: 100%;
@@ -78,10 +77,11 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .nav-link.no-decoration {
 position: relative;
-}
+} */
 
 /* подчеркиваем конец кода */
 
+/* 
 .header-conteiner {
   display: flex;
   justify-content: space-between;
@@ -94,13 +94,13 @@ position: relative;
  
 .nav-item {
   margin-right: 40px;
- }
+ } */
 
 /* =======conteiner======== */
 
 
 
-
+/* 
 body {
   background-color: var(--background-primary-color);
   color: var(--background-primary-color);
@@ -125,20 +125,20 @@ text-decoration: none;
 
 .nav-link-no-decoration {
   text-decoration: none
-}
+} */
 
 
 /* logo */
-
+/* 
 .header-conteiner {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 
 /* logo */
 
-.page-header {
+/* .page-header {
   margin-bottom: 0;
 }
 
@@ -154,10 +154,10 @@ text-decoration: none;
 
 .logo-accent {
   color: var(--title-primary-color);
-}
+} */
 
 /* Navigation */
-
+/* 
 .nav-list {
   display: flex;
  }
@@ -209,10 +209,10 @@ text-decoration: none;
    display: block; 
   padding-top: 24px;
   padding-bottom: 24px;
- }
+ } */
 
   /* contacts */
-
+/* 
 .contacts  {
   display: flex; 
   align-items: center;
@@ -235,9 +235,9 @@ text-decoration: none;
 
 /*відступ між лого та студіо */
 
-.nav-list {
+/* .nav-list {
   margin-left: 77px;
-}
+}  */
 
 /* Hero */
 .hero-btn {
@@ -755,80 +755,7 @@ margin-bottom: 16px;
  
 }
  
-/* footer form */
 
-.mailing-form {
-  display: flex;
-  justify-content: space-between;
-}
- 
-.mailing-title {
-  /* margin-right: 537px; */
-  margin-bottom: 16px;
-  margin-left: 80px;
-  color: var(--background-primary-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  /* text-transform: uppercase; */
-}
-
-
-
-
-.mailing-input {
-  width: 264px;
-  height: 40px;
-  padding: 8px 16px; 
-  margin-right: 24px;
-  margin-left: 80px;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.3);
-  transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mailing-input::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.mailing-input:hover,
-.mailing-input:focus {
-  border: 1px solid #4D5AE5;
-}
-
-.mailing-btn {
-  width: 165px;
-  height: 40px;
-  margin-right: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
- 
-
-
-  background-color: var(--brand-color);
-  color: var(--background-primary-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.04em;
-  text-align: center;
- 
-}
-
-.icon-send {
-  margin-left: 16px;
-  
-}
 /*======================== modal=========================== */
 .backdrop {
   position: fixed;
@@ -1032,8 +959,107 @@ border-radius: 4px;
 
 
 
-.privat-form {
-  text-decoration: none;
-  color: rgba(77, 90, 229, 1);
- }
+
+/* footer form */
+
+.mailing-form {
+  display: flex;
+  justify-content: space-between;
+}
  
+.mailing-title {
+  /* margin-right: 537px; */
+  margin-bottom: 16px;
+  margin-left: 80px;
+  color: var(--background-primary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  /* text-transform: uppercase; */
+}
+
+
+
+
+.mailing-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px; 
+  margin-right: 24px;
+  margin-left: 80px;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.3);
+  transform: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mailing-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.mailing-input:hover,
+.mailing-input:focus {
+  border: 1px solid #4D5AE5;
+}
+
+.mailing-btn {
+  width: 165px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ margin-right: 56px;
+
+
+  background-color: var(--brand-color);
+  color: var(--background-primary-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.icon-send {
+  margin-left: 16px;
+  /* fill: var(--secondary-title-color); */
+}
+
+
+
+.conteiner {
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+@media screen and (min-width:480px) {
+  .conteiner {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width:760px) {
+  .conteiner {
+    width: 768px;
+   
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .conteiner {
+    width: 1158px;
+   
+  
+  }
+}
