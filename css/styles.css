@@ -127,7 +127,7 @@ ul {
 }
 .contacts-mobile {
  display: block;
- padding-top: ;
+ padding-top: 284px
 }
   
 
@@ -233,6 +233,39 @@ color: #434455;
   color: var(--brand-color);
 }
 }
+
+/* СТИЛІ ХЕРО */
+.hero-btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover, 
+.hero-btn:focus {
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+background-color: #404BBF;
+}
+
+/* .hero {
+  max-width: 428px; margin: 0 auto;
+  background-color:  #2E2F42;
+  padding: 112px 0;
+  text-align: center;
+  background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+  url(../images/mobile-1xbg.jpg);
+   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+   }  */
+
+   /* @media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-width: 768px) {
+ 
+} */
+
+
 /* СТИЛІ НА ПДАНШЕТІ */
 @media screen and (min-width: 767px) {
   .mobile-menu {
@@ -311,6 +344,9 @@ line-height: 16px;
 letter-spacing: 0.04em;
 
 }
+
+/* СТИЛІ ХЕРО */
+
 }
 
 /* СТИЛІ НА ДЕКСТОП */
