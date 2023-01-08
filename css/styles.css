@@ -33,10 +33,23 @@ p {
 img {
   display: block;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} 
 body {
   background-color: var(--background-primary-color);
-  color: var(--background-primary-color);
-  font-family: 'Roboto', sans-serif;
+  color: var(--nav-link-color);
+  font-family: 'Roboto';
 }
 
 ul {
@@ -58,7 +71,7 @@ ul {
   }
   @media screen and (min-width: 480px) {
     .conteiner {
-      width: 396px;
+      /* width: 396px; */
       margin-left: auto;
       margin-right: auto;
     }
@@ -138,7 +151,7 @@ ul {
   width: 100%;
   height: 100%;
   z-index: 1000;
-  min-height: 796px;
+  max-height: 796px;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 1);
@@ -146,6 +159,7 @@ ul {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 250ms linear, visibility 250ms linear;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
 } 
 
 .mobile-menu.is-open {
@@ -153,6 +167,7 @@ ul {
   visibility: visible;
   pointer-events: auto;
 } 
+
  .contacts-mobile {
  display: block;
  margin-top: 284px;
@@ -164,7 +179,7 @@ ul {
   padding-bottom: 40px;
 } 
  .mobil-menu-conteiner {
-  position: relative;
+    position: relative;
   padding-left: 40px;
   padding-top: 80px;
  
@@ -262,6 +277,21 @@ color: #434455;
   color: var(--brand-color);
 }
 
+ .description {
+  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+
+
+color: #434455;
+
+ }
+
+ 
 
 
 }
@@ -500,16 +530,7 @@ screen and (min-width: 768px) {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--title-primary-color);
-
-}
-
-.description {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-weight: 500px;
-  font-size: 16px;
-  line-height: 1.5;
-    color: var(--paragraph-primary-color);
+  margin-bottom: 8px;
 }
 
 
@@ -524,19 +545,7 @@ screen and (min-width: 768px) {
 
 /* ========================== */
 
-/* .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-} */
+ 
 
 /*======header========= */
 /* подчеркиваем */
