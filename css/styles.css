@@ -72,28 +72,29 @@ ul {
 
 
   }
+
+
   @media screen and (min-width: 480px) {
-    .conteiner {
-      /* width: 396px; */
-      margin-left: auto;
-      margin-right: auto;
-      
+    .container {
+        width: 428px;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
-  @media screen and (min-width: 768px) {
-    .conteiner {
-      width: 736px;
-      margin-left: auto;
-      margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 736px;
     }
-  }
-  @media screen and (min-width: 1200px) {
-    .conteiner {
-      width: 1158px;
-      margin-left: auto;
-      margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1168px;
     }
-  }
+}
+
+  
 /* logo modal */
  @media screen and (max-width: 767px) {
   
@@ -142,7 +143,7 @@ ul {
   color: var(--title-primary-color);
 } 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 765px) {
 .mobile-menu-open {
   background-color: transparent;
   border: none;
@@ -281,31 +282,14 @@ color: #434455;
   color: var(--brand-color);
 }
 
- .description {
-  
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-letter-spacing: 0.02em;
-padding-bottom: 72px;
 
-
-color: #434455;
-
- } 
 
  
- .item-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: var(--title-primary-color);
-  margin-bottom: 8px;
-  text-align: center;
-}
+ 
+ 
+
+
+
 
 
 }
@@ -355,7 +339,8 @@ background-color: #404BBF;
 
 @media screen and (max-width: 427px) {
 .hero {
-  max-width: 428px; margin: 0 auto;
+  max-width: 428px;
+   margin: 0 auto;
   background-color:  #2E2F42;
   padding: 112px 0;
   text-align: center;
@@ -372,7 +357,7 @@ screen and (min-resolution: 2dppx),
 screen and (min-width: 768px) {
  .hero {
   background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-  url(../images/mobile-1xbg.jpg);}
+  url(../images/mobile-bg@2x.jpg);}
 } 
 }
       
@@ -524,21 +509,20 @@ screen and (min-width: 768px) {
   background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
   url(../images/deck2.png);}
 } 
+
+
+.features-list {
+
+
+  display: flex;
+  
+  flex-wrap: wrap;
+
+
 }
-/* секція фейчурес закриваємо правило дл стилів які не потрібні */
-@media screen and (max-width: 1220px) {
-  .features-icons {
-    display: none;
-  }
+.features-item {
+  flex-basis: 50%;
 }
-
-
-/* Features section*/
-
-.section {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}  
 .item-title {
   font-weight: 700;
   font-size: 36px;
@@ -547,6 +531,141 @@ screen and (min-width: 768px) {
   color: var(--title-primary-color);
   margin-bottom: 8px;
 }
+
+}
+
+
+
+/* ОКРЕМО СЕКЦІЯ ФЕЧУРЕС З АНТЕНОЮ */
+ 
+.item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-primary-color);
+  margin-bottom: 8px;
+  text-align: center;
+  
+  
+}
+
+.description {
+  
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+/* padding-bottom: 72px; */
+color: #434455;
+
+ } 
+
+ .features {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}   
+ 
+@media screen and (max-width: 767px) {
+  .item-title  {
+      text-align: center;
+  }
+
+  .features-item:not(:last-child) {
+      margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-item:nth-child(-n+2) {
+      margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .features-item {
+      flex-basis: calc((100% - 24px)/2);
+  }
+
+  .features-item:nth-child(2n+1) {
+      margin-right: 24px;
+  }
+}
+
+
+@media screen and (min-width:1200px) {
+  .features {
+      padding-top: 120px;
+      padding-bottom: 60px;
+  }
+
+  .item-title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      line-height: 102%;
+  }
+
+  .description {
+      font-weight: 400;
+  }
+
+  .features-item {
+      flex-basis: calc((100% - 72px)/4);
+  }
+
+  .features-item:not(:last-child) {
+      margin-right: 24px;
+  }
+
+  .features-item::before {
+      /* display: block; */
+      content: "";
+      height: 112px;
+      border-radius: 4px;
+      background-color: var(--logo-dark-thema);
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-bottom: 8px;
+  }
+
+  .features-icons {
+    background-color: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    
+  }
+}
+/* секція фейчурес закриваємо правило дл стилів які не потрібні */
+@media screen and (max-width: 1220px) {
+  .features-icons {
+    display: none;
+  }
+  
+}
+
+
+/* works*/
+
+
+/* .item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-primary-color);
+  margin-bottom: 8px;
+} */
 
 
 
