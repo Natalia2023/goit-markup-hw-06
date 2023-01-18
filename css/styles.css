@@ -243,7 +243,7 @@ height: 40px;
   display: flex;
   justify-content: center;
   gap: 24px 56px;
-  \
+  
 flex-wrap: wrap;
 }
 .contacts-link-mobile-tel {
