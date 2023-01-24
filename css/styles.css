@@ -1,7 +1,7 @@
 /* змінні */
 
 :root {
-  --paragraph-primary-color: #434455;
+  --paragraph-primary-header-conteinerolor: #434455;
   --title-primary-color: #2e2f42;
   --title-secondary-color: #ffffff;
   --brand-color: #4d5ae5;
@@ -70,6 +70,7 @@ ul {
   padding-right: 16px;
   overflow: auto;
 
+  
 
   }
 
